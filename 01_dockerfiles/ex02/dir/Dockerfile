@@ -1,9 +1,9 @@
 FROM ruby
 
 RUN apt-get update -y &&\
-	apt-get install -y sqlite3 nodejs ruby-dev &&\
+	apt-get install -y nodejs &&\
 	gem update &&\
-	gem install bundler rails
+	gem install rails
 
 ONBUILD ADD			app /opt/app
 ONBUILD WORKDIR 	/opt/app/
