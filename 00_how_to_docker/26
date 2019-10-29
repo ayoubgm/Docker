@@ -1,1 +1,0 @@
-docker service create --name=engineering-bay --replicas=2  --network=overmind 42school/engineering-bay

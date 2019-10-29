@@ -1,1 +1,0 @@
-docker service scale marines=20
